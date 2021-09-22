@@ -1,0 +1,7 @@
+ssh-key-confirmer
+id_rsa
+id_dsa
+id_ed25519
+*.pub
+openssh-8.7p1
+.vscode
