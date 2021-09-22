@@ -1,0 +1,20 @@
+Source: ssh-key-confirmer
+Maintainer: Ben Cartwright-Cox <ben@benjojo.co.uk>
+Uploaders: Ben Cartwright-Cox <ben@benjojo.co.uk>,
+Section: net
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 9),
+               dh-golang,
+Standards-Version: 4.4.1
+XS-Go-Import-Path: github.com/benjojo/ssh-key-confirmer
+
+Package: ssh-key-confirmer
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: adduser,
+         daemon | systemd-sysv,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Built-Using: ${misc:Built-Using},
+Description: Test ssh login key acceptance without having the private key

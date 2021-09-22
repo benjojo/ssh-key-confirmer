@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- Mode: makefile -*-
+
+include /usr/share/dpkg/pkg-info.mk
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install Makefile
+
+override_dh_auto_configure override_dh_auto_build override_dh_auto_test override_dh_auto_install override_dh_auto_clean:

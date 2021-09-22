@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: github.com/benjojo/ssh-key-confirmer
+Source: https://github.com/benjojo/ssh-key-confirmer
+Comment: Upstream embeds many dependencies into the source tree. Everything
+ that is already packaged in Debian has been removed, packages that were deemed
+ useful to have as independent packages were packaged independenly, and the
+ rest was left embedded.
+
+Files: *
+Copyright: 2021-2021 Ben Cartwright-Cox
+License: MIT
