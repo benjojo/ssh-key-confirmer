@@ -6,7 +6,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"os"
 
 	"golang.org/x/crypto/ssh"
 )
@@ -60,7 +59,7 @@ func (f bogoSigner) PublicKey() ssh.PublicKey {
 }
 
 func (f bogoSigner) Sign(rand io.Reader, data []byte) (*ssh.Signature, error) {
-	fmt.Printf("Server is attemping any key\n")
-	os.Exit(10)
+	printAndExit("Server is attemping any key\n", 10)
+
 	return nil, nil
 }
